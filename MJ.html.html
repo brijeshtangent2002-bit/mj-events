@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJ Events | Make Your Moments Special</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        royal: {
+                            950: '#140624',
+                            900: '#210A3A',
+                            800: '#351259',
+                            700: '#4C1D95',
+                        },
+                        gold: {
+                            300: '#FDE68A',
+                            400: '#F59E0B',
+                            500: '#D97706',
+                            600: '#B45309',
+                        },
+                        cream: '#FDFBF7'
+                    },
+                    fontFamily: {
+                        display: ['Cinzel', 'serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient {
+            background: linear-gradient(135deg, #FDE68A 0%, #D97706 50%, #B45309 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-btn {
+            background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+            transition: all 0.3s ease;
+        }
+        .gold-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(217, 119, 6, 0.5);
+        }
+        .card-hover {
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-6px);
+        }
+    </style>
+</head>
+<body class="bg-cream text-slate-800 font-sans antialiased selection:bg-royal-800 selection:text-amber-300">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-royal-950/95 backdrop-blur-md border-b border-amber-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="#" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-500 to-yellow-200 flex items-center justify-center text-royal-950 shadow-lg">
+                        <i class="fa-solid fa-crown text-lg"></i>
+                    </div>
+                    <div>
+                        <span class="font-display text-2xl font-bold tracking-wider text-white">MJ <span class="text-amber-400">Events</span></span>
+                        <p class="text-[10px] tracking-[0.2em] text-amber-200/80 uppercase">Make Your Moments Special</p>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-200">
+                    <a href="#themes" class="hover:text-amber-400 transition">Themes</a>
+                    <a href="#services" class="hover:text-amber-400 transition">Our Services</a>
+                    <a href="#packages" class="hover:text-amber-400 transition">Packages</a>
+                    <a href="#booking" class="gold-btn text-royal-950 font-bold px-5 py-2.5 rounded-full shadow-md">
+                        Book Now
+                    </a>
+                </div>
+
+                <a href="tel:+916356067227" class="md:hidden gold-btn text-royal-950 text-xs font-bold px-4 py-2 rounded-full">
+                    <i class="fa-solid fa-phone mr-1"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-44 lg:pb-32 bg-royal-950 text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#D97706_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-purple-600/30 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-amber-500/20 rounded-full blur-3xl"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center space-x-2 bg-white/10 border border-amber-400/30 rounded-full px-4 py-1.5 mb-6">
+                <i class="fa-solid fa-sparkles text-amber-400 text-xs"></i>
+                <span class="text-xs font-semibold tracking-widest uppercase text-amber-200">Luxury Event & Theme Decorators</span>
+            </div>
+
+            <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                Crafting Unforgettable <br>
+                <span class="gold-gradient">Royal Celebrations</span>
+            </h1>
+
+            <p class="font-serif italic text-lg sm:text-2xl text-amber-200/90 max-w-2xl mx-auto mb-10">
+                "Make Your Moments Special..." — From sacred Seemant Sanskar & Krishna themes to vibrant Birthday & Baby Shower setups.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#booking" class="w-full sm:w-auto gold-btn text-royal-950 font-bold px-8 py-4 rounded-full text-base shadow-xl flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-xl"></i> Book Your Event Date
+                </a>
+                <a href="tel:+916356067227" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-8 py-4 rounded-full text-base transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone text-amber-400"></i> +91 6356067227
+                </a>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto pt-10 border-t border-white/10">
+                <div>
+                    <p class="font-display text-3xl font-bold text-amber-400">500+</p>
+                    <p class="text-xs text-gray-300 uppercase tracking-wider mt-1">Events Decorated</p>
+                </div>
+                <div>
+                    <p class="font-display text-3xl font-bold text-amber-400">50+</p>
+                    <p class="text-xs text-gray-300 uppercase tracking-wider mt-1">Custom Themes</p>
+                </div>
+                <div>
+                    <p class="font-display text-3xl font-bold text-amber-400">100%</p>
+                    <p class="text-xs text-gray-300 uppercase tracking-wider mt-1">On-Time Setup</p>
+                </div>
+                <div>
+                    <p class="font-display text-3xl font-bold text-amber-400">4.9★</p>
+                    <p class="text-xs text-gray-300 uppercase tracking-wider mt-1">Client Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Themes Section -->
+    <section id="themes" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14">
+            <span class="text-amber-600 font-bold text-xs tracking-widest uppercase">Our Portfolio</span>
+            <h2 class="font-display text-3xl sm:text-4xl font-bold text-royal-950 mt-2">Signature Theme Decorations</h2>
+            <div class="w-24 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Theme 1 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-amber-100 card-hover">
+                <div class="h-60 bg-gradient-to-br from-purple-900 via-indigo-900 to-royal-950 relative flex items-center justify-center p-6 text-center">
+                    <div class="absolute top-4 left-4 bg-amber-400 text-royal-950 text-xs font-bold px-3 py-1 rounded-full">Most Popular</div>
+                    <div>
+                        <i class="fa-solid fa-flute text-4xl text-amber-300 mb-3"></i>
+                        <h3 class="font-serif text-2xl font-bold text-white">Krishna Theme Decoration</h3>
+                        <p class="text-xs text-purple-200 mt-1">Royal Purple, Silver & Peacock Motifs</p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-sm text-slate-600 mb-4">Divine Bal Krishna & Yashoda Maa backdrops with pastel-purple balloon arches, floral props, and custom cutouts.</p>
+                    <button onclick="selectTheme('Krishna Theme Decoration')" class="w-full py-2.5 rounded-xl bg-royal-900 hover:bg-royal-800 text-amber-300 font-semibold text-sm transition">
+                        Enquire This Theme →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Theme 2 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-amber-100 card-hover">
+                <div class="h-60 bg-gradient-to-br from-pink-700 via-purple-800 to-sky-900 relative flex items-center justify-center p-6 text-center">
+                    <div class="absolute top-4 left-4 bg-white/20 backdrop-blur text-white text-xs font-bold px-3 py-1 rounded-full">Trending</div>
+                    <div>
+                        <i class="fa-solid fa-baby-carriage text-4xl text-pink-200 mb-3"></i>
+                        <h3 class="font-serif text-2xl font-bold text-white">Baby Shower Decoration</h3>
+                        <p class="text-xs text-pink-100 mt-1">Pastel Pink, Sky Blue & Cute Props</p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-sm text-slate-600 mb-4">Personalized name boards, pastel balloon rings, baby blocks, and charming welcome standees for your special day.</p>
+                    <button onclick="selectTheme('Baby Shower Decoration')" class="w-full py-2.5 rounded-xl bg-royal-900 hover:bg-royal-800 text-amber-300 font-semibold text-sm transition">
+                        Enquire This Theme →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Theme 3 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-amber-100 card-hover">
+                <div class="h-60 bg-gradient-to-br from-rose-900 via-amber-800 to-royal-900 relative flex items-center justify-center p-6 text-center">
+                    <div class="absolute top-4 left-4 bg-amber-400 text-royal-950 text-xs font-bold px-3 py-1 rounded-full">Traditional</div>
+                    <div>
+                        <i class="fa-solid fa-om text-4xl text-amber-300 mb-3"></i>
+                        <h3 class="font-serif text-2xl font-bold text-white">Seemant Sanskar Setup</h3>
+                        <p class="text-xs text-amber-100 mt-1">Traditional Cultural & Floral Aesthetics</p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-sm text-slate-600 mb-4">Auspicious Seemantonnayan Sanskar stage backdrops blending traditional Indian motifs with modern balloon artistry.</p>
+                    <button onclick="selectTheme('Seemant Sanskar Decoration')" class="w-full py-2.5 rounded-xl bg-royal-900 hover:bg-royal-800 text-amber-300 font-semibold text-sm transition">
+                        Enquire This Theme →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Theme 4 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-amber-100 card-hover">
+                <div class="h-60 bg-gradient-to-br from-amber-600 via-orange-700 to-royal-900 relative flex items-center justify-center p-6 text-center">
+                    <div>
+                        <i class="fa-solid fa-cake-candles text-4xl text-yellow-200 mb-3"></i>
+                        <h3 class="font-serif text-2xl font-bold text-white">Birthday Decoration</h3>
+                        <p class="text-xs text-amber-100 mt-1">Kids, Milestone & Ring Setups</p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-sm text-slate-600 mb-4">Vibrant circular balloon rings, foil letter name displays, LED numbers, and customized cartoon or luxury themes.</p>
+                    <button onclick="selectTheme('Birthday Decoration')" class="w-full py-2.5 rounded-xl bg-royal-900 hover:bg-royal-800 text-amber-300 font-semibold text-sm transition">
+                        Enquire This Theme →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Theme 5 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-amber-100 card-hover">
+                <div class="h-60 bg-gradient-to-br from-red-900 via-amber-700 to-yellow-800 relative flex items-center justify-center p-6 text-center">
+                    <div>
+                        <i class="fa-solid fa-hands-praying text-4xl text-amber-300 mb-3"></i>
+                        <h3 class="font-serif text-2xl font-bold text-white">Ganesh Decoration</h3>
+                        <p class="text-xs text-amber-100 mt-1">Eco-Friendly Floral & Royal Mandaps</p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-sm text-slate-600 mb-4">Grand home and society Ganpati backdrops crafted with fresh flowers, warm lighting, drapes, and artistic arches.</p>
+                    <button onclick="selectTheme('Ganesh Decoration')" class="w-full py-2.5 rounded-xl bg-royal-900 hover:bg-royal-800 text-amber-300 font-semibold text-sm transition">
+                        Enquire This Theme →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Theme 6 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-amber-100 card-hover">
+                <div class="h-60 bg-gradient-to-br from-slate-900 via-purple-950 to-amber-900 relative flex items-center justify-center p-6 text-center">
+                    <div>
+                        <i class="fa-solid fa-wand-magic-sparkles text-4xl text-amber-400 mb-3"></i>
+                        <h3 class="font-serif text-2xl font-bold text-white">Custom Theme & Setup</h3>
+                        <p class="text-xs text-gray-300 mt-1">Tailored To Your Vision & Venue</p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-sm text-slate-600 mb-4">Have a unique concept in mind? Share your reference idea and our team will design a bespoke setup for any occasion.</p>
+                    <button onclick="selectTheme('Custom Theme Setup')" class="w-full py-2.5 rounded-xl bg-royal-900 hover:bg-royal-800 text-amber-300 font-semibold text-sm transition">
+                        Enquire Custom Design →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Complete Services Checklist -->
+    <section id="services" class="py-20 bg-royal-950 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <span class="text-amber-400 font-bold text-xs tracking-widest uppercase">What We Offer</span>
+                <h2 class="font-display text-3xl sm:text-4xl font-bold mt-2">Our Complete Event Services</h2>
+                <div class="w-24 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                <div class="bg-white/5 border border-amber-400/20 rounded-xl p-5 flex items-center space-x-3">
+                    <i class="fa-solid fa-circle-check text-amber-400 text-xl"></i>
+                    <span class="font-semibold">Birthday Decoration</span>
+                </div>
+                <div class="bg-white/5 border border-amber-400/20 rounded-xl p-5 flex items-center space-x-3">
+                    <i class="fa-solid fa-circle-check text-amber-400 text-xl"></i>
+                    <span class="font-semibold">Baby Shower Decoration</span>
+                </div>
+                <div class="bg-white/5 border border-amber-400/20 rounded-xl p-5 flex items-center space-x-3">
+                    <i class="fa-solid fa-circle-check text-amber-400 text-xl"></i>
+                    <span class="font-semibold">Seemant Sanskar</span>
+                </div>
+                <div class="bg-white/5 border border-amber-400/20 rounded-xl p-5 flex items-center space-x-3">
+                    <i class="fa-solid fa-circle-check text-amber-400 text-xl"></i>
+                    <span class="font-semibold">Krishna Theme</span>
+                </div>
+                <div class="bg-white/5 border border-amber-400/20 rounded-xl p-5 flex items-center space-x-3">
+                    <i class="fa-solid fa-circle-check text-amber-400 text-xl"></i>
+                    <span class="font-semibold">Ganesh Decoration</span>
+                </div>
+                <div class="bg-white/5 border border-amber-400/20 rounded-xl p-5 flex items-center space-x-3">
+                    <i class="fa-solid fa-circle-check text-amber-400 text-xl"></i>
+                    <span class="font-semibold">Complete Event Setup</span>
+                </div>
+                <div class="bg-white/5 border border-amber-400/20 rounded-xl p-5 flex items-center space-x-3">
+                    <i class="fa-solid fa-circle-check text-amber-400 text-xl"></i>
+                    <span class="font-semibold">Balloon Decoration</span>
+                </div>
+                <div class="bg-white/5 border border-amber-400/20 rounded-xl p-5 flex items-center space-x-3">
+                    <i class="fa-solid fa-circle-check text-amber-400 text-xl"></i>
+                    <span class="font-semibold">Custom Theme Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14">
+            <span class="text-amber-600 font-bold text-xs tracking-widest uppercase">Flexible Options</span>
+            <h2 class="font-display text-3xl sm:text-4xl font-bold text-royal-950 mt-2">Decoration Packages</h2>
+            <p class="text-slate-600 text-sm mt-2">Customizable according to your venue space and budget</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl p-8 shadow-md border border-slate-200">
+                <h3 class="font-display text-xl font-bold text-royal-950">Classic Celebration</h3>
+                <p class="text-xs text-slate-500 mt-1">Ideal for Home & Apartment Setups</p>
+                <ul class="mt-6 space-y-3 text-sm text-slate-700">
+                    <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Ring / Arch Balloon Backdrop</li>
+                    <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Custom Name / Occasion Banner</li>
+                    <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Warm Fairy / Focus Lighting</li>
+                    <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> 2-Hour Express Installation</li>
+                </ul>
+                <button onclick="selectTheme('Classic Celebration Package')" class="mt-8 w-full py-3 rounded-xl border-2 border-royal-900 text-royal-900 font-bold text-sm hover:bg-royal-900 hover:text-white transition">
+                    Get Quote
+                </button>
+            </div>
+
+            <div class="bg-royal-950 text-white rounded-2xl p-8 shadow-2xl border-2 border-amber-400 relative transform md:-translate-y-3">
+                <span class="absolute -top-3.5 right-6 bg-amber-400 text-royal-950 text-xs font-extrabold px-3 py-1 rounded-full uppercase">Most Booked</span>
+                <h3 class="font-display text-xl font-bold text-amber-300">Royal Theme Grand</h3>
+                <p class="text-xs text-purple-200 mt-1">Ideal for Banquet Halls & Seemant / Baby Shower</p>
+                <ul class="mt-6 space-y-3 text-sm text-gray-200">
+                    <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> Full Designer Theme Flex / Fabric Stage</li>
+                    <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> 3D Cutouts, Props & Baby Blocks</li>
+                    <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> Heavy Pastel / Metallic Balloon Garland</li>
+                    <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> Welcome Board & Carpet Setup</li>
+                </ul>
+                <button onclick="selectTheme('Royal Theme Grand Package')" class="mt-8 w-full py-3 rounded-xl gold-btn text-royal-950 font-bold text-sm shadow-lg">
+                    Book Royal Package
+                </button>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-md border border-slate-200">
+                <h3 class="font-display text-xl font-bold text-royal-950">Bespoke Luxury</h3>
+                <p class="text-xs text-slate-500 mt-1">Complete Venue & Custom Concept Makeover</p>
+                <ul class="mt-6 space-y-3 text-sm text-slate-700">
+                    <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> 100% Custom Theme Concept</li>
+                    <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Fresh Floral + Balloon Fusion</li>
+                    <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Entrance Gate & Selfie Booth</li>
+                    <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Dedicated On-Site Event Coordinator</li>
+                </ul>
+                <button onclick="selectTheme('Bespoke Luxury Package')" class="mt-8 w-full py-3 rounded-xl border-2 border-royal-900 text-royal-900 font-bold text-sm hover:bg-royal-900 hover:text-white transition">
+                    Get Quote
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instant WhatsApp Booking Section -->
+    <section id="booking" class="py-20 bg-gradient-to-b from-purple-50 to-amber-50/60 border-t border-amber-200/60">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl border border-amber-200 p-8 sm:p-10">
+                <div class="text-center mb-8">
+                    <span class="bg-purple-100 text-royal-900 text-xs font-bold px-3 py-1 rounded-full uppercase">Instant Response</span>
+                    <h2 class="font-display text-3xl font-bold text-royal-950 mt-3">Book Your Event Now</h2>
+                    <p class="text-sm text-slate-600 mt-1">Fill details below to send an instant booking enquiry on WhatsApp</p>
+                </div>
+
+                <form onsubmit="sendWhatsApp(event)" class="space-y-5">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">Your Name *</label>
+                            <input type="text" id="custName" required placeholder="Enter your name" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-royal-800 focus:outline-none text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">Phone Number *</label>
+                            <input type="tel" id="custPhone" required placeholder="Your mobile number" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-royal-800 focus:outline-none text-sm">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">Select Event / Theme *</label>
+                            <select id="eventType" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-royal-800 focus:outline-none text-sm bg-white">
+                                <option value="Krishna Theme Decoration">Krishna Theme Decoration</option>
+                                <option value="Baby Shower Decoration">Baby Shower Decoration</option>
+                                <option value="Seemant Sanskar Decoration">Seemant Sanskar Decoration</option>
+                                <option value="Birthday Decoration">Birthday Decoration</option>
+                                <option value="Ganesh Decoration">Ganesh Decoration</option>
+                                <option value="Custom Theme Setup">Custom Theme Setup</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">Event Date *</label>
+                            <input type="date" id="eventDate" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-royal-800 focus:outline-none text-sm">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">Venue / City & Special Requirements</label>
+                        <textarea id="eventNotes" rows="3" placeholder="Venue location, indoor/outdoor, or custom theme details..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-royal-800 focus:outline-none text-sm"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full gold-btn text-royal-950 font-extrabold py-4 rounded-xl text-base shadow-lg flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> Send Enquiry on WhatsApp
+                    </button>
+                </form>
+
+                <div class="mt-6 pt-6 border-t border-slate-100 text-center">
+                    <p class="text-xs text-slate-500">Or call directly for urgent bookings:</p>
+                    <a href="tel:+916356067227" class="inline-flex items-center gap-2 text-lg font-bold text-royal-900 mt-1 hover:text-amber-600 transition">
+                        <i class="fa-solid fa-phone-volume text-amber-500"></i> +91 6356067227
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-royal-950 text-gray-300 py-12 border-t border-amber-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex justify-center items-center space-x-2 mb-3">
+                <i class="fa-solid fa-crown text-amber-400 text-xl"></i>
+                <span class="font-display text-2xl font-bold text-white">MJ <span class="text-amber-400">Events</span></span>
+            </div>
+            <p class="font-serif italic text-amber-200/80 text-sm mb-6">Make Your Moments Special...</p>
+
+            <div class="flex justify-center space-x-6 text-sm mb-8">
+                <a href="tel:+916356067227" class="hover:text-amber-400 transition"><i class="fa-solid fa-phone mr-1"></i> +91 6356067227</a>
+                <a href="https://wa.me/916356067227" target="_blank" class="hover:text-amber-400 transition"><i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp</a>
+            </div>
+
+            <div class="pt-6 border-t border-white/10 text-xs text-gray-400 space-y-1">
+                <p>&copy; 2026 MJ Events. All Rights Reserved.</p>
+                <p class="text-amber-300/90 font-medium">Designed & Developed by <span class="font-bold text-amber-400">Brijesh Prajapati</span> — Web Developer</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/916356067227?text=Hello%20MJ%20Events!%20I%20want%20to%20enquire%20about%20event%20decoration." target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-2xl transition transform hover:scale-110">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script>
+        function selectTheme(themeName) {
+            const select = document.getElementById('eventType');
+            for (let i = 0; i < select.options.length; i++) {
+                if (select.options[i].value === themeName) {
+                    select.selectedIndex = i;
+                    break;
+                }
+            }
+            document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function sendWhatsApp(e) {
+            e.preventDefault();
+            const name = document.getElementById('custName').value;
+            const phone = document.getElementById('custPhone').value;
+            const theme = document.getElementById('eventType').value;
+            const date = document.getElementById('eventDate').value;
+            const notes = document.getElementById('eventNotes').value;
+
+            const message = `*New Event Booking Enquiry - MJ Events*%0A%0A` +
+                            `*Name:* ${encodeURIComponent(name)}%0A` +
+                            `*Phone:* ${encodeURIComponent(phone)}%0A` +
+                            `*Theme/Package:* ${encodeURIComponent(theme)}%0A` +
+                            `*Event Date:* ${encodeURIComponent(date)}%0A` +
+                            `*Details:* ${encodeURIComponent(notes || 'Not specified')}`;
+
+            window.open(`https://wa.me/916356067227?text=${message}`, '_blank');
+        }
+    </script>
+</body>
+</html>
